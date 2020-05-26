@@ -16,9 +16,10 @@
 package com.example.android.miwok;
 
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         // Find the tab layout that shows the tabs
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        TabLayout tabLayout = findViewById(R.id.tabs);
 
         // Connect the tab layout with the view pager. This will
         //   1. Update the tab layout when the view pager is swiped
